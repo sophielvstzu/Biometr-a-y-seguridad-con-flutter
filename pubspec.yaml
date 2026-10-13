@@ -1,0 +1,23 @@
+name: flutter_biometria_demo
+description: Demo de login biométrico (huella/FaceID) y guardado seguro de tokens con local_auth y flutter_secure_storage.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  local_auth: ^2.3.0              # Huella / Face ID / PIN del dispositivo
+  flutter_secure_storage: ^9.2.4  # Keystore (Android) / Keychain (iOS)
+  http: ^1.2.0                    # Llamadas HTTP a la API de IA
+  crypto: ^3.0.3                  # Hash SHA-256 para contraseñas y PIN
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
